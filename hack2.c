@@ -4,8 +4,7 @@
 #define Nc 3e25
 #define Nv 1e25
 #define Eg 1.76239e-19
-#define T 300
-#define Kb 1.3806452e-23
+#define KbT 4.1657e-21
 #define Q 1.60218e-19
 #define pi 3.14159265359
 
@@ -32,7 +31,7 @@ double fermiintg(double x)
 double function(double x)
 {
     double u;
-    u = -Na + (Nv * (2 / sqrt(pi)) * fermiintg((x - Eg )/ (Kb * T))) - (Nc * (2 / sqrt(pi)) * fermiintg((-x) / (Kb * T)));
+    u = -Na + (Nv * (2 / sqrt(pi)) * fermiintg((x - Eg )/ (KbT))) - (Nc * (2 / sqrt(pi)) * fermiintg((-x) / (KbT)));
     return u;
 }
 
@@ -60,8 +59,8 @@ int main()
 
     double a, b, d, e;
 
-    a = 0;
-    b = 2.5*Eg;
+    a = -5*Eg;
+    b = 5*Eg;
 
     while (1)
     {
