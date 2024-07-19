@@ -12,7 +12,6 @@ double fermi(float T)
 
 int main()
 {
-
     FILE *ptr;
 
     ptr = fopen("fermi.txt", "w");

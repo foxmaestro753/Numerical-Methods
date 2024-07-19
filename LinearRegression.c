@@ -14,9 +14,9 @@ int main()
         fscanf(fp, "%lf", &matrix[i][1]);
     }
 
-    // double x[] = {1.2, 2.3, 3.8, 4.9, 5.9};
-    // double y[] = {1.245, 4.90, 9.67, 16.67, 25.89};
-    // int n = sizeof(x) / sizeof(x[0]);
+    double x[] = {1.2, 2.3, 3.8, 4.9, 5.9};
+    double y[] = {1.245, 4.90, 9.67, 16.67, 25.89};
+    int n = sizeof(x) / sizeof(x[0]);
 
     int n = 100;
 

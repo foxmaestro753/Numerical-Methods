@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-//  double
-
 double dharacharya1(double a, double b, double c)
 {
     double root1_a = (-b) / 2 * a;
@@ -27,8 +25,6 @@ int main()
     printf("%lf\n", roots1);
     printf("%lf\n", roots2);
 }
-
-// float
 
 float dharacharya1(float a, float b, float c)
 {

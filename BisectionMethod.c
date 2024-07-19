@@ -10,15 +10,12 @@ double potend(double x)
 
 int main()
 {
-
      double a, b, d, e;
-
      a = 0.0001;
      b = 100;
 
      while (1)
      {
-
           d = (a + b) / 2;
 
           if (potend(a) * potend(d) < 0)
@@ -43,7 +40,7 @@ int main()
                a = e;
           }
 
-          if (fabs(d-e) < 0.000000000000001)
+          if (fabs(d - e) < 0.000000000000001)
           {
                break;
           }
